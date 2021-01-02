@@ -1,21 +1,33 @@
 {
-  "name": "@vermilion/taco-resource-library",
-  "version": "1.0.0",
-  "description": "Vue.js Resource Library for Taco WordPress",
+  "name": "vue-wp-resource-library",
+  "version": "1.1.0",
+  "description": "Vue.js Resource Library for WordPress",
   "main": "resource-library.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs": "jsdoc2md resource-library.js"
+    "docs": "jsdoc2md resource-library.js",
+    "start": "",
+    "build": "webpack --entry ./resource-library.js -o ./dist/"
   },
-  "author": "Ian Zhang",
+  "authors": [
+    {
+      "name": "Matt Dickey"
+    },
+    {
+      "name": "Ian Zhang"
+    }
+  ],
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.17.1",
-    "history": "^4.7.2",
-    "lodash": "^4.17.4",
-    "vue": "^2.5.9"
+    "history": "^5.0.0",
+    "lodash": "^4.17.20"
+  },
+  "peerDependencies": {
+    "vue": "^2.5"
   },
   "devDependencies": {
-    "jsdoc-to-markdown": "^3.0.2"
-  }
+    "jsdoc-to-markdown": "^6.0.1"
+  },
+  "browserslist": [
+    "last 3 chrome versions"
+  ]
 }

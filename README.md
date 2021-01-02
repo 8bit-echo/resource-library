@@ -1,16 +1,10 @@
-# Resource Library
-## Requires
-Knowledge of Vue.js and Taco WordPress
+yarn run v1.22.10
+$ jsdoc2md resource-library.js
+<a name="module_ResourceLibrary"></a>
 
-## Usage
-Simply require resource-library and create a new instance to use.  See `sample/news-articles-sample.vue` for an example implementation for news articles in single file Vue format.  `sample/news-article-sample.html` contains an example of how to instantiate the Resource Library in HTML.
-
-Ideally, all manupulation of the Resource Library will occur within Vue, but it is also possible to interact with it using external controls.  `sample/news-articles-sample.js` contains several examples of how to communicate from the Vue instance to an external element using `triggerRootElement()`, as well as how to communicate from an external element back to the Vue instance.
-
-Below is the API documentation to use within the Vue instance.
-
-## ResourceLibrary Class Documentation
+## ResourceLibrary
 Vue.js Resource Library for Taco WordPress
+
 
 * [ResourceLibrary](#module_ResourceLibrary)
     * [~ResourceLibrary](#module_ResourceLibrary..ResourceLibrary) : <code>object</code>
@@ -43,7 +37,7 @@ Vue.js Resource Library for Taco WordPress
 <a name="module_ResourceLibrary..ResourceLibrary"></a>
 
 ### ResourceLibrary~ResourceLibrary : <code>object</code>
-**Kind**: inner namespace of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner namespace of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 **Properties**
 
 | Name | Type | Description |
@@ -63,7 +57,7 @@ Vue.js Resource Library for Taco WordPress
 <a name="module_ResourceLibrary..ResourceLibrary"></a>
 
 ### ResourceLibrary~ResourceLibrary : <code>object</code>
-**Kind**: inner namespace of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner namespace of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 **Properties**
 
 | Name | Type | Description |
@@ -75,7 +69,7 @@ Vue.js Resource Library for Taco WordPress
 <a name="module_ResourceLibrary..ResourceLibrary"></a>
 
 ### ResourceLibrary~ResourceLibrary : <code>object</code>
-**Kind**: inner namespace of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner namespace of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 **Properties**
 
 | Name | Type | Description |
@@ -87,25 +81,25 @@ Vue.js Resource Library for Taco WordPress
 ### ResourceLibrary~afterCreated()
 Override in order to call method after component is created
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 <a name="module_ResourceLibrary..onInitialLoad"></a>
 
 ### ResourceLibrary~onInitialLoad()
 Override in order to call method on initial load
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 <a name="module_ResourceLibrary..onParamsChange"></a>
 
 ### ResourceLibrary~onParamsChange()
 Override in order to call method after params change but not on initial load
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 <a name="module_ResourceLibrary..selectPage"></a>
 
 ### ResourceLibrary~selectPage(page, callback)
 Select which page of results to display
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -117,7 +111,7 @@ Select which page of results to display
 ### ResourceLibrary~setSearchTerms(search, callback)
 Set search terms
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -129,7 +123,7 @@ Set search terms
 ### ResourceLibrary~resetTerms(taxonomy, callback)
 Reset taxonomy terms
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -141,7 +135,7 @@ Reset taxonomy terms
 ### ResourceLibrary~addTerms(taxonomy, terms, callback)
 Add taxonomy terms
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -154,7 +148,7 @@ Add taxonomy terms
 ### ResourceLibrary~removeTerms(taxonomy, terms, callback)
 Remove taxonomy terms
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -167,7 +161,7 @@ Remove taxonomy terms
 ### ResourceLibrary~setTerms(taxonomy, terms, callback)
 Set taxonomy terms.  This overwrites any current taxonomy temms.
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -180,7 +174,7 @@ Set taxonomy terms.  This overwrites any current taxonomy temms.
 ### ResourceLibrary~joinTerms(item, taxonomy, separator)
 Helper function to join taxonomy terms into a string to display on the front end
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -193,7 +187,7 @@ Helper function to join taxonomy terms into a string to display on the front end
 ### ResourceLibrary~setOrder(order, callback)
 Set whether to order results in ascending or descending order
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -205,7 +199,7 @@ Set whether to order results in ascending or descending order
 ### ResourceLibrary~setOrderBy(orderby, callback)
 Set the field to order results by
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -217,7 +211,7 @@ Set the field to order results by
 ### ResourceLibrary~selectOrderBy(orderby, default_order, callback)
 Convenience method to select an orderby and set the appropriate order, or toggle the order if already selected.
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -230,8 +224,8 @@ Convenience method to select an orderby and set the appropriate order, or toggle
 ### ResourceLibrary~isOrderedBy(orderby, order) ⇒ <code>boolean</code>
 Convenience method to see what we're ordered by in order to deal with postmeta
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
-**Returns**: <code>boolean</code> - Whether or not results are currently ordered by orderby, and sorted in the order direction
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
+**Returns**: <code>boolean</code> - Whether or not results are currently ordered by orderby, and sorted in the order direction  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -243,13 +237,13 @@ Convenience method to see what we're ordered by in order to deal with postmeta
 ### ResourceLibrary~toggleOrder()
 Toggle the order direction from asc to desc or from desc to asc
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 <a name="module_ResourceLibrary..setMetaFilter"></a>
 
 ### ResourceLibrary~setMetaFilter(field, value)
 Set a filter on a meta-value.  Currently only supports one field value per meta value.
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -261,7 +255,7 @@ Set a filter on a meta-value.  Currently only supports one field value per meta 
 ### ResourceLibrary~removeMetaFilter(field)
 Remove filters on a meta field
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -272,26 +266,26 @@ Remove filters on a meta field
 ### ResourceLibrary~clearMetaFilters()
 Clear all meta filters
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 <a name="module_ResourceLibrary..initialParams"></a>
 
 ### ResourceLibrary~initialParams() ⇒ <code>Object</code>
 Get the params that the resource library was initialized with
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
-**Returns**: <code>Object</code> - Object of initial values
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
+**Returns**: <code>Object</code> - Object of initial values  
 <a name="module_ResourceLibrary..reset"></a>
 
 ### ResourceLibrary~reset()
 Reset params to their initial values
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 <a name="module_ResourceLibrary..triggerRootEvent"></a>
 
 ### ResourceLibrary~triggerRootEvent(event, args)
 In case you need to communicate with something outside of Vue, call this to trigger an event on the Vue root element.  Attach a function to the Vue root element to then interact with the function.  The args will be passed to the "detail" arg in the function
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -303,8 +297,8 @@ In case you need to communicate with something outside of Vue, call this to trig
 ### ResourceLibrary~serializeParams(params) ⇒ <code>string</code>
 Serialize URL params
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
-**Returns**: <code>string</code> - A URL param string (e.g. param1=value1&param2=value2)
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
+**Returns**: <code>string</code> - A URL param string (e.g. param1=value1&param2=value2)  
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -315,8 +309,8 @@ Serialize URL params
 ### ResourceLibrary~unserializeParams(param_string) ⇒ <code>Object</code>
 Unserialize URL params to an object
 
-**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)
-**Returns**: <code>Object</code> - An object with key:value pairs corresponding to the URL params
+**Kind**: inner method of [<code>ResourceLibrary</code>](#module_ResourceLibrary)  
+**Returns**: <code>Object</code> - An object with key:value pairs corresponding to the URL params  
 
 | Param | Type | Description |
 | --- | --- | --- |
