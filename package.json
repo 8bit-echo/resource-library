@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "description": "Vue.js Resource Library for WordPress",
   "main": "resource-library.js",
+  "repository": "https://github.com/8bit-echo/resource-library",
   "scripts": {
     "docs": "jsdoc2md resource-library.js",
     "start": "",
